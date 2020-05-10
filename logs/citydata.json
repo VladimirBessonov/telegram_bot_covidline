@@ -1,0 +1,36 @@
+[
+    {
+        "id": "3",
+        "organization_id": "3",
+        "name": "UC San Diego Medical Center",
+        "alternate_name": "UCSF",
+        "description": "Yes, we are testing people who meet certain conditions. Our ability to test patients is improving, but testing remains limited so we cannot test all individuals. Your health care provider will determine if you meet the criteria for testing.",
+        "transportation": "Bus, Car, Uber",
+        "updated": "2020-04-01",
+        "featured": "TRUE",
+        "physical_address": [
+            {
+                "id": "3",
+                "location_id": "3",
+                "address_1": "200 West Arbor Drive",
+                "city": "San Diego",
+                "region": "Southern California",
+                "state_province": "CA",
+                "postal_code": "92103",
+                "country": "US"
+            }
+        ],
+        "phones": [
+            {
+                "id": "3",
+                "location_id": "3",
+                "number": " +1 858-657-7000",
+                "extension": "None",
+                "type": "Office",
+                "language": "EN",
+                "description": "Primary number pulled from Google Maps listing."
+            }
+        ],
+        "regular_schedule": []
+    }
+]

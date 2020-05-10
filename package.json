@@ -1,0 +1,29 @@
+{
+  "name": "telegraf_smo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.668.0",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "serverless": "^1.70.0",
+    "serverless-http": "^2.3.2",
+    "telegraf": "^3.38.0",
+    "telegraf-session-dynamodb": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "IS_LOCAL=true nodemon --ignore './logs/' index.js ",
+    "start": "IS_LOCAL=true node index.js"
+  },
+  "keywords": [
+    "telegram_bot"
+  ],
+  "author": "VB",
+  "license": "MIT"
+}
