@@ -9,7 +9,7 @@ const { capitalize} = require('../lib/utilities')
 module.exports.textHandler = bot => {
   bot.on("text", async ctx => {
     let textMsg = ctx.message.text.toLowerCase()
-    await findLocation(ctx, textMsg)
+     await findLocation(ctx, textMsg)
 
   })
 };

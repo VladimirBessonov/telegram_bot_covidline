@@ -1,0 +1,32 @@
+service: covidline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-west-2
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:*"
+      Resource: "arn:aws:s3:::covidline/*"
+    - Effect: "Allow"
+      Action:
+        - "dynamodb:*"
+      Resource: "arn:aws:dynamodb:us-west-2:XXXXXXXXXXX:table/${self:custom.dynamoDBtable}"
+
+  environment:
+    BOT_TOKEN: 'your token here'
+    maxDeltaTime: 100
+    AWS_DYNAMODB_TABLE: ${self:custom.dynamoDBtable}
+    AWS_BUCKET: covidline
+    GW_URL: {"Fn::Join": ["", ["https://", {"Ref" : "ApiGatewayRestApi"}, ".execute-api.${self:provider.region}.amazonaws.com/${self:provider.stage}"]]}
+custom:
+  dynamoDBtable: telegraf-session-covidbot
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
