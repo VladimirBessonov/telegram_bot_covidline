@@ -10,7 +10,7 @@
     "express": "^4.17.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
-    "serverless": "^1.70.0",
+    "serverless": "^3.25.1",
     "serverless-http": "^2.3.2",
     "telegraf": "^3.38.0",
     "telegraf-session-dynamodb": "^1.3.0"
