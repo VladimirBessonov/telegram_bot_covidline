@@ -7,7 +7,7 @@
     "aws-sdk": "^2.668.0",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "serverless": "^1.70.0",
